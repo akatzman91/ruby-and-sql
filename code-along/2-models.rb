@@ -18,12 +18,21 @@ puts "there are #{Company.all.count} companies"
 
 # 2. insert new rows in companies table
 new_company = Company.new
-p new_company
+# p new_company
 new_company["name"] = "Apple"
 new_company["city"] = "Cupertino"
 new_company["state"] = "CA"
 new_company["url"] = "https://apple.com"
 new_company.save
+
+#p company
+company = Company.new
+company["name"] = "Amazon"
+company["city"] = "Seattle"
+company["state"] = "WA"
+company.save
+
+
 
 puts "There are #{Company.all.count} companies"
 
